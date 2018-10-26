@@ -1,6 +1,7 @@
 # androidThingsRobot
 
 Summary:
+
  工程基于RaspberryPi3 ModelB+开源硬件平台，使用Google最新Android Things1.3为软件系统，实现了一系列的设计开发，为自家孩子设计一款玩具。本意为智能车或者智能设备爱好者提供一些参考，如果大家有好的ideas或者商业用途，都可以联系我，非常感谢！
  工程开发了一套Andord手机客户端，以此来显示视频监听，运动控制和图像识别结果显示等功能，具体如下链接：
   https://github.com/jueying8888/androidThingsRobotClient.git
