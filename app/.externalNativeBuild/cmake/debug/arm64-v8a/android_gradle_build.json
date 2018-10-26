@@ -1,0 +1,50 @@
+
+{
+	"buildFiles" : [ "/home/hjb/android_works/respberryDemo/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"native-lib-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "native-lib",
+			"buildCommand" : "/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a --target native-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android27 --gcc-toolchain=/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/hjb/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -isystem /home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/hjb/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11  -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/hjb/android_works/respberryDemo/app/src/main/jni/native-lib.cpp",
+					"workingDirectory" : "/home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android27 --gcc-toolchain=/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/hjb/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -isystem /home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/hjb/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11  -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/hjb/android_works/respberryDemo/app/src/main/jni/UsbCamera.cpp",
+					"workingDirectory" : "/home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android27 --gcc-toolchain=/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/hjb/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -isystem /home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/hjb/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11  -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/hjb/android_works/respberryDemo/app/src/main/jni/yuvTobmp.cpp",
+					"workingDirectory" : "/home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				}
+			],
+			"output" : "/home/hjb/android_works/respberryDemo/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so",
+			"toolchain" : "5227853895296450786"
+		}
+	},
+	"toolchains" : 
+	{
+		"5227853895296450786" : 
+		{
+			"cCompilerExecutable" : "/home/hjb/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/hjb/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}
