@@ -26,17 +26,16 @@ public class OledControl{
     private static final String TAG = "OledScreenActivity";
     private static final int SCREEN_WIDTH = 128;
     private static final int SCREEN_HEIGHT = 64;
-    private  static final  String StartGif = "startMode.gif";
+    private static final  String StartGif = "startMode.gif";
 
     private Ssd1306 mScreen;
-
     private Bitmap mBitmap;
     PeripheralManager piomanager;
     private Resources resources;
-
     private Font16 font;
     private String hostIp;
 
+    //控制OLED初始化时复位电路。
     private static String pinreset = "BCM26";
     public static Gpio pinReset;
 
@@ -51,7 +50,7 @@ public class OledControl{
 
         Log.i(TAG, "hostIp: "+ this.hostIp);
         try {
-            /* Control reset*/
+            /* Control Oled  reset*/
             pinReset = piomanager.openGpio(pinreset);
             pinReset.setDirection(1);
             pinReset.setValue(false);
@@ -127,7 +126,6 @@ public class OledControl{
             e.printStackTrace();
         }
 
-        //ins = this.getAssets().open(StartGif);
         if(ins != null) {
             gifDecoder gifDecoder = new gifDecoder();
             gifDecoder.read(ins, 7723650); //data is a byte array
@@ -179,6 +177,7 @@ public class OledControl{
         Bitmap resizeBmp = Bitmap.createBitmap(bitmap,0,0,bitmap.getWidth(),bitmap.getHeight(),matrix,true);
         return resizeBmp;
     }
+
     /**
      * Draws a BMP in one of three positions.
      */

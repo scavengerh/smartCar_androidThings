@@ -12,4 +12,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/debug/x86_64
+-- Build files have been written to: /tmp/androidThingsRobot/app/.externalNativeBuild/cmake/debug/x86_64

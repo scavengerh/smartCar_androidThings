@@ -9,17 +9,13 @@
 
 
 UsbCamera* camera;
-#define  PREVIEW_WIDTH   1280
-#define  PREVIEW_HRIGHT  720
-
 
 JavaVM* jvm = NULL;
 jobject mjobject =NULL;
 unsigned char* pbuffer = NULL;
 
 void datahandler(char* buff, int length) {
-#if 1
-     //  LOGI("%s: handle data Length: %d\n", __func__, length);
+
         memcpy(pbuffer, buff, length);
 
         JNIEnv *jnienv = NULL;
@@ -33,14 +29,12 @@ void datahandler(char* buff, int length) {
 
         // jnienv->CallVoidMethod(mclass, jmethodID1);
         jnienv->CallStaticVoidMethod(mclass, jmethodID1);
-#endif
 }
 
 extern "C"
 JNIEXPORT jint JNICALL
 Java_com_example_admin_webcardemo_UsbCamera_UsbCameraInit(JNIEnv *env, jobject instance,jint width, jint height) {
 
-    int ret;
     camera = new UsbCamera("video0", width, height);
     if(camera->UsbCameraOpen() < 0){
         return -1;
@@ -53,8 +47,6 @@ Java_com_example_admin_webcardemo_UsbCamera_UsbCameraInit(JNIEnv *env, jobject i
     env->GetJavaVM(&jvm);
     mjobject = env->NewGlobalRef(instance);
 
-  //  LOGI("%s initialize end", __func__);
-
     return 0;
 }extern "C"
 JNIEXPORT jint JNICALL
@@ -63,7 +55,7 @@ Java_com_example_admin_webcardemo_UsbCamera_UsbCameraStart(JNIEnv *env, jobject 
     if(camera->UsbCameraStart() < 0){
         return  -1;
     }
- //   LOGI("%s start end", __func__);
+
     return 0;
 }extern "C"
 JNIEXPORT jint JNICALL
@@ -96,7 +88,7 @@ JNIEXPORT jstring JNICALL
 Java_com_example_admin_webcardemo_UsbCamera_UsbCameraGetPictrue(JNIEnv *env, jobject instance) {
 
     // TODO
-    //return env->NewStringUTF(camera->listpath[camera->listindex]);
+
     char strbuf[128]  ={0};
     if(camera->listindex != 0){
         strcpy(strbuf, camera->listpath[(camera->listindex) - 1]);

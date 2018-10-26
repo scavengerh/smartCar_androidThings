@@ -1,19 +1,19 @@
 The target system is: Android - 1 - aarch64
 The host system is: Linux - 4.15.0-34-generic - x86_64
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
+Change Dir: /tmp/androidThingsRobot/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_1122b"
-[1/2] Building C object CMakeFiles/cmTC_1122b.dir/testCCompiler.c.o
-[2/2] Linking C executable cmTC_1122b
+Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_f06d6"
+[1/2] Building C object CMakeFiles/cmTC_f06d6.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_f06d6
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
+Change Dir: /tmp/androidThingsRobot/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_41c0b"
-[1/2] Building C object CMakeFiles/cmTC_41c0b.dir/CMakeCCompilerABI.c.o
-[2/2] Linking C executable cmTC_41c0b
+Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_49dd5"
+[1/2] Building C object CMakeFiles/cmTC_49dd5.dir/CMakeCCompilerABI.c.o
+[2/2] Linking C executable cmTC_49dd5
 Android (4751641 based on r328903) clang version 7.0.2 (https://android.googlesource.com/toolchain/clang 003100370607242ddd5815e4a043907ea9004281) (https://android.googlesource.com/toolchain/llvm 1d739ffb0366421d383e04ff80ec2ee591315116) (based on LLVM 7.0.2svn)
 Target: aarch64-none-linux-android27
 Thread model: posix
@@ -22,16 +22,16 @@ Found candidate GCC installation: /home/hjb/Android/Sdk/ndk-bundle/toolchains/aa
 Selected GCC installation: /home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x
 Candidate multilib: .;@m64
 Selected multilib: .;@m64
- "/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64 -pie --fix-cortex-a53-843419 -z relro --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_41c0b /home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib/crtbegin_dynamic.o -L/home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/arm64-v8a -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/7.0.2/lib/linux/aarch64 -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_41c0b.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib/crtend_android.o
+ "/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64 -pie --fix-cortex-a53-843419 -z relro --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_49dd5 /home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib/crtbegin_dynamic.o -L/home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/arm64-v8a -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/7.0.2/lib/linux/aarch64 -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_49dd5.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib/crtend_android.o
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(aarch64-linux-android-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /tmp/androidThingsRobot/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_41c0b"]
-  ignore line: [[1/2] Building C object CMakeFiles/cmTC_41c0b.dir/CMakeCCompilerABI.c.o]
-  ignore line: [[2/2] Linking C executable cmTC_41c0b]
+  ignore line: [Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_49dd5"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_49dd5.dir/CMakeCCompilerABI.c.o]
+  ignore line: [[2/2] Linking C executable cmTC_49dd5]
   ignore line: [Android (4751641 based on r328903) clang version 7.0.2 (https://android.googlesource.com/toolchain/clang 003100370607242ddd5815e4a043907ea9004281) (https://android.googlesource.com/toolchain/llvm 1d739ffb0366421d383e04ff80ec2ee591315116) (based on LLVM 7.0.2svn)]
   ignore line: [Target: aarch64-none-linux-android27]
   ignore line: [Thread model: posix]
@@ -42,7 +42,7 @@ Parsed C implicit link information from above output:
   ignore line: [@m64]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  link line: [ "/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64 -pie --fix-cortex-a53-843419 -z relro --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_41c0b /home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib/crtbegin_dynamic.o -L/home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/arm64-v8a -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/7.0.2/lib/linux/aarch64 -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_41c0b.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib/crtend_android.o]
+  link line: [ "/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64 -pie --fix-cortex-a53-843419 -z relro --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_49dd5 /home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib/crtbegin_dynamic.o -L/home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/arm64-v8a -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/7.0.2/lib/linux/aarch64 -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_49dd5.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib/crtend_android.o]
     arg [/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld] ==> ignore
     arg [--sysroot=/home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64] ==> ignore
     arg [-pie] ==> ignore
@@ -55,7 +55,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker64] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_41c0b] ==> ignore
+    arg [cmTC_49dd5] ==> ignore
     arg [/home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib/crtbegin_dynamic.o] ==> ignore
     arg [-L/home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/arm64-v8a] ==> dir [/home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/arm64-v8a]
     arg [-L/home/hjb/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/7.0.2/lib/linux/aarch64] ==> dir [/home/hjb/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/7.0.2/lib/linux/aarch64]
@@ -76,7 +76,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_41c0b.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_49dd5.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
     arg [-lc] ==> lib [c]
@@ -99,11 +99,11 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
+Change Dir: /tmp/androidThingsRobot/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_ffc29"
-[1/2] Building C object CMakeFiles/cmTC_ffc29.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_ffc29
+Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_c4275"
+[1/2] Building C object CMakeFiles/cmTC_c4275.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_c4275
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -113,11 +113,11 @@ Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_ffc2
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
+Change Dir: /tmp/androidThingsRobot/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_69ac7"
-[1/2] Building C object CMakeFiles/cmTC_69ac7.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_69ac7
+Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_7d86b"
+[1/2] Building C object CMakeFiles/cmTC_7d86b.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_7d86b
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -127,11 +127,11 @@ Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_69ac
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
+Change Dir: /tmp/androidThingsRobot/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_6fdc5"
-[1/2] Building C object CMakeFiles/cmTC_6fdc5.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_6fdc5
+Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_8d7f1"
+[1/2] Building C object CMakeFiles/cmTC_8d7f1.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_8d7f1
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -139,19 +139,19 @@ Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_6fdc
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
+Change Dir: /tmp/androidThingsRobot/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_a0ca8"
-[1/2] Building CXX object CMakeFiles/cmTC_a0ca8.dir/testCXXCompiler.cxx.o
-[2/2] Linking CXX executable cmTC_a0ca8
+Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_10d63"
+[1/2] Building CXX object CMakeFiles/cmTC_10d63.dir/testCXXCompiler.cxx.o
+[2/2] Linking CXX executable cmTC_10d63
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
+Change Dir: /tmp/androidThingsRobot/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_e3058"
-[1/2] Building CXX object CMakeFiles/cmTC_e3058.dir/CMakeCXXCompilerABI.cpp.o
-[2/2] Linking CXX executable cmTC_e3058
+Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_4c66b"
+[1/2] Building CXX object CMakeFiles/cmTC_4c66b.dir/CMakeCXXCompilerABI.cpp.o
+[2/2] Linking CXX executable cmTC_4c66b
 Android (4751641 based on r328903) clang version 7.0.2 (https://android.googlesource.com/toolchain/clang 003100370607242ddd5815e4a043907ea9004281) (https://android.googlesource.com/toolchain/llvm 1d739ffb0366421d383e04ff80ec2ee591315116) (based on LLVM 7.0.2svn)
 Target: aarch64-none-linux-android27
 Thread model: posix
@@ -160,16 +160,16 @@ Found candidate GCC installation: /home/hjb/Android/Sdk/ndk-bundle/toolchains/aa
 Selected GCC installation: /home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x
 Candidate multilib: .;@m64
 Selected multilib: .;@m64
- "/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64 -pie --fix-cortex-a53-843419 -z relro --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_e3058 /home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib/crtbegin_dynamic.o -L/home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/arm64-v8a -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/7.0.2/lib/linux/aarch64 -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_e3058.dir/CMakeCXXCompilerABI.cpp.o -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib/crtend_android.o
+ "/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64 -pie --fix-cortex-a53-843419 -z relro --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_4c66b /home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib/crtbegin_dynamic.o -L/home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/arm64-v8a -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/7.0.2/lib/linux/aarch64 -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_4c66b.dir/CMakeCXXCompilerABI.cpp.o -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib/crtend_android.o
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(aarch64-linux-android-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /tmp/androidThingsRobot/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_e3058"]
-  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_e3058.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [[2/2] Linking CXX executable cmTC_e3058]
+  ignore line: [Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_4c66b"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_4c66b.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [[2/2] Linking CXX executable cmTC_4c66b]
   ignore line: [Android (4751641 based on r328903) clang version 7.0.2 (https://android.googlesource.com/toolchain/clang 003100370607242ddd5815e4a043907ea9004281) (https://android.googlesource.com/toolchain/llvm 1d739ffb0366421d383e04ff80ec2ee591315116) (based on LLVM 7.0.2svn)]
   ignore line: [Target: aarch64-none-linux-android27]
   ignore line: [Thread model: posix]
@@ -180,7 +180,7 @@ Parsed CXX implicit link information from above output:
   ignore line: [@m64]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  link line: [ "/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64 -pie --fix-cortex-a53-843419 -z relro --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_e3058 /home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib/crtbegin_dynamic.o -L/home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/arm64-v8a -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/7.0.2/lib/linux/aarch64 -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_e3058.dir/CMakeCXXCompilerABI.cpp.o -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib/crtend_android.o]
+  link line: [ "/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64 -pie --fix-cortex-a53-843419 -z relro --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_4c66b /home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib/crtbegin_dynamic.o -L/home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/arm64-v8a -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/7.0.2/lib/linux/aarch64 -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_4c66b.dir/CMakeCXXCompilerABI.cpp.o -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib/crtend_android.o]
     arg [/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld] ==> ignore
     arg [--sysroot=/home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64] ==> ignore
     arg [-pie] ==> ignore
@@ -193,7 +193,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker64] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_e3058] ==> ignore
+    arg [cmTC_4c66b] ==> ignore
     arg [/home/hjb/Android/Sdk/ndk-bundle/platforms/android-27/arch-arm64/usr/lib/crtbegin_dynamic.o] ==> ignore
     arg [-L/home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/arm64-v8a] ==> dir [/home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/arm64-v8a]
     arg [-L/home/hjb/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/7.0.2/lib/linux/aarch64] ==> dir [/home/hjb/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/7.0.2/lib/linux/aarch64]
@@ -214,7 +214,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_e3058.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_4c66b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lm] ==> lib [m]
     arg [-lgcc] ==> lib [gcc]
     arg [-lgcc] ==> lib [gcc]
@@ -242,11 +242,11 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
+Change Dir: /tmp/androidThingsRobot/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_8f6cb"
-[1/2] Building CXX object CMakeFiles/cmTC_8f6cb.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_8f6cb
+Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_65e47"
+[1/2] Building CXX object CMakeFiles/cmTC_65e47.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_65e47
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -309,11 +309,11 @@ Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_8f6c
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
+Change Dir: /tmp/androidThingsRobot/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_b0414"
-[1/2] Building CXX object CMakeFiles/cmTC_b0414.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_b0414
+Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_3c0e4"
+[1/2] Building CXX object CMakeFiles/cmTC_3c0e4.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_3c0e4
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -376,11 +376,11 @@ Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_b041
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
+Change Dir: /tmp/androidThingsRobot/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_44aa0"
-[1/2] Building CXX object CMakeFiles/cmTC_44aa0.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_44aa0
+Run Build Command:"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_500d8"
+[1/2] Building CXX object CMakeFiles/cmTC_500d8.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_500d8
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

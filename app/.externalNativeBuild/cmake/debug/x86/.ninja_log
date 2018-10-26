@@ -1,5 +1,5 @@
 # ninja log v5
-2	51	0	CMakeFiles/native-lib.dir/src/main/jni/yuvTobmp.cpp.o	b66970772a13830b
-1	292	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.cpp.o	2896583658fe7a14
-1	292	0	CMakeFiles/native-lib.dir/src/main/jni/UsbCamera.cpp.o	a877185d7663b1ba
-293	658	0	../../../../build/intermediates/cmake/debug/obj/x86/libnative-lib.so	9ead401d313fed6b
+1	24	0	CMakeFiles/native-lib.dir/src/main/jni/yuvTobmp.cpp.o	15bca184ee1af4d3
+0	280	0	CMakeFiles/native-lib.dir/src/main/jni/UsbCamera.cpp.o	311a42f8bf6bbbd2
+0	284	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.cpp.o	10abe20b58b91112
+284	521	0	../../../../build/intermediates/cmake/debug/obj/x86/libnative-lib.so	9ead401d313fed6b

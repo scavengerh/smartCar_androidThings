@@ -1,17 +1,5 @@
 # ninja log v5
-1	58	0	CMakeFiles/native-lib.dir/src/main/jni/yuvTobmp.cpp.o	c65b219c8b2e9c01
-1	276	0	CMakeFiles/native-lib.dir/src/main/jni/UsbCamera.cpp.o	f10c586a9ec0ff18
-1	282	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.cpp.o	5c592e400b1ef82d
-282	677	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	befe0b6d79c19234
-0	1334	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.cpp.o	5c592e400b1ef82d
-1334	1669	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	befe0b6d79c19234
-0	286	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.cpp.o	5c592e400b1ef82d
-286	334	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	befe0b6d79c19234
-0	291	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.cpp.o	5c592e400b1ef82d
-291	340	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	befe0b6d79c19234
-1	413	0	CMakeFiles/native-lib.dir/src/main/jni/UsbCamera.cpp.o	f10c586a9ec0ff18
-413	460	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	befe0b6d79c19234
-1	296	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.cpp.o	5c592e400b1ef82d
-296	345	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	befe0b6d79c19234
-1	265	0	CMakeFiles/native-lib.dir/src/main/jni/UsbCamera.cpp.o	f10c586a9ec0ff18
-265	313	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	befe0b6d79c19234
+0	21	0	CMakeFiles/native-lib.dir/src/main/jni/yuvTobmp.cpp.o	bcd2815232401d1d
+0	272	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.cpp.o	4ff14cdd894e40bc
+0	272	0	CMakeFiles/native-lib.dir/src/main/jni/UsbCamera.cpp.o	3424bfe87ce9286d
+272	374	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	befe0b6d79c19234

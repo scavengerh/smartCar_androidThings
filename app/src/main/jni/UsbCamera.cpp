@@ -111,14 +111,6 @@ int UsbCamera::UsbCameraInit() {
     format.fmt.pix.field =  V4L2_FIELD_NONE;
     if (xioctl( fd, VIDIOC_S_FMT, &format) == -1)  LOGE("VIDIOC_S_FMT");
 
-
-//    struct v4l2_queryctrl  Setting;
-//    memset(&Setting, 0, sizeof(Setting));
-//    Setting.id = V4L2_CID_GAIN;
-//    if (xioctl( fd, VIDIOC_QUERYCTRL, &Setting) == -1)  LOGE("VIDIOC_QUERYCTRL");
-//     LOGI("VIDIOC_QUERYCTRL: minnum:%d, maxnum:%d, step:%d", Setting.minimum, Setting.maximum, Setting.step );
-//
-
     struct v4l2_control ctrl;
     memset(&ctrl, 0, sizeof(ctrl));
     ctrl.id = V4L2_CID_EXPOSURE_AUTO;

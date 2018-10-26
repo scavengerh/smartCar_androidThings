@@ -1,3 +1,3 @@
-/home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/rebuild_cache.dir
-/home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/edit_cache.dir
-/home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/native-lib.dir
+/tmp/androidThingsRobot/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/rebuild_cache.dir
+/tmp/androidThingsRobot/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/edit_cache.dir
+/tmp/androidThingsRobot/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/native-lib.dir

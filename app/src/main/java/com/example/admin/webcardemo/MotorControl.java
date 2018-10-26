@@ -49,9 +49,6 @@ public class MotorControl {
     public int Init() {
         piomanager = PeripheralManager.getInstance();
 
-
-
-        List<String> piolist = piomanager.getGpioList();
         List<String> pwdlist = piomanager.getPwmList();
         for (int i = 0; i < pwdlist.size(); i++)
             Log.i(TAG, "pwm list:" + i + ", " + pwdlist.get(i));
@@ -162,8 +159,6 @@ public class MotorControl {
      *             2.0ms-----------135度；  10.0%
      *             2.5ms-----------180度；  12.5%
      */
-
-
     public void controlSevroMotorCmd(int index, double pwm) {
         Log.i(TAG,"PWM: " + index + ", pwm perriod: "+ pwm);
         double pwm1,pwm2;
@@ -230,6 +225,9 @@ public class MotorControl {
         }
     }
 
+    /**
+     * 通过客户端的方向触摸信号来控制小车移动方向
+     * */
     public void motorContrlAngle(double angle, boolean enable){
         if(enable){
             /*
@@ -244,15 +242,16 @@ public class MotorControl {
         }
     }
 
+    /**
+     *  小车运动方向控制Loop
+     * */
     private class MotorRun implements Runnable{
         private int motorIndex;
-        private int servoIndex;
         private int count;
         private int stepCount = 100;
         @Override
         public void run() {
             motorIndex = 0;
-            servoIndex = 0;
             count = 0;
             while (isRun){
                 if(motorConlFlags){

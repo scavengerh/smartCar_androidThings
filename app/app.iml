@@ -129,7 +129,6 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 27 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/home/hjb/android_works/respberryDemo/app/libs/glide-3.6.0.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-v4-27.1.1" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.things:androidthings:1.0@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:runner-1.0.2" level="project" />
@@ -148,6 +147,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.findbugs:jsr305:2.0.1@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-core-3.0.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: javax.inject:javax.inject:1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/tmp/androidThingsRobot/app/libs/glide-3.6.0.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-fragment-27.1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:runtime-1.1.0" level="project" />

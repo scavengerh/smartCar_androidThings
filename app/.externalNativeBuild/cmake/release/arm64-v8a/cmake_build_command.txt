@@ -1,10 +1,10 @@
 Executable : /home/hjb/Android/Sdk/cmake/3.6.4111459/bin/cmake
 arguments : 
--H/home/hjb/android_works/respberryDemo/app
--B/home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/release/arm64-v8a
+-H/tmp/androidThingsRobot/app
+-B/tmp/androidThingsRobot/app/.externalNativeBuild/cmake/release/arm64-v8a
 -DANDROID_ABI=arm64-v8a
 -DANDROID_PLATFORM=android-27
--DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/home/hjb/android_works/respberryDemo/app/build/intermediates/cmake/release/obj/arm64-v8a
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/tmp/androidThingsRobot/app/build/intermediates/cmake/release/obj/arm64-v8a
 -DCMAKE_BUILD_TYPE=Release
 -DANDROID_NDK=/home/hjb/Android/Sdk/ndk-bundle
 -DCMAKE_TOOLCHAIN_FILE=/home/hjb/Android/Sdk/ndk-bundle/build/cmake/android.toolchain.cmake

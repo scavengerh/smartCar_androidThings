@@ -1,9 +1,9 @@
 
 {
-	"buildFiles" : [ "/home/hjb/android_works/respberryDemo/app/CMakeLists.txt" ],
+	"buildFiles" : [ "/tmp/androidThingsRobot/app/CMakeLists.txt" ],
 	"cleanCommands" : 
 	[
-		"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/release/arm64-v8a --target clean"
+		"/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /tmp/androidThingsRobot/app/.externalNativeBuild/cmake/release/arm64-v8a --target clean"
 	],
 	"cppFileExtensions" : [ "cpp" ],
 	"libraries" : 
@@ -12,30 +12,30 @@
 		{
 			"abi" : "arm64-v8a",
 			"artifactName" : "native-lib",
-			"buildCommand" : "/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/release/arm64-v8a --target native-lib",
+			"buildCommand" : "/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /tmp/androidThingsRobot/app/.externalNativeBuild/cmake/release/arm64-v8a --target native-lib",
 			"buildType" : "release",
 			"files" : 
 			[
 				
 				{
 					"flags" : "  --target=aarch64-none-linux-android27 --gcc-toolchain=/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/hjb/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -isystem /home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/hjb/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11  -O2 -DNDEBUG  -fPIC    -c ",
-					"src" : "/home/hjb/android_works/respberryDemo/app/src/main/jni/native-lib.cpp",
-					"workingDirectory" : "/home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+					"src" : "/tmp/androidThingsRobot/app/src/main/jni/native-lib.cpp",
+					"workingDirectory" : "/tmp/androidThingsRobot/app/.externalNativeBuild/cmake/release/arm64-v8a"
 				},
 				
 				{
 					"flags" : "  --target=aarch64-none-linux-android27 --gcc-toolchain=/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/hjb/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -isystem /home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/hjb/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11  -O2 -DNDEBUG  -fPIC    -c ",
-					"src" : "/home/hjb/android_works/respberryDemo/app/src/main/jni/UsbCamera.cpp",
-					"workingDirectory" : "/home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+					"src" : "/tmp/androidThingsRobot/app/src/main/jni/UsbCamera.cpp",
+					"workingDirectory" : "/tmp/androidThingsRobot/app/.externalNativeBuild/cmake/release/arm64-v8a"
 				},
 				
 				{
 					"flags" : "  --target=aarch64-none-linux-android27 --gcc-toolchain=/home/hjb/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/hjb/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -isystem /home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/hjb/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/hjb/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11  -O2 -DNDEBUG  -fPIC    -c ",
-					"src" : "/home/hjb/android_works/respberryDemo/app/src/main/jni/yuvTobmp.cpp",
-					"workingDirectory" : "/home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+					"src" : "/tmp/androidThingsRobot/app/src/main/jni/yuvTobmp.cpp",
+					"workingDirectory" : "/tmp/androidThingsRobot/app/.externalNativeBuild/cmake/release/arm64-v8a"
 				}
 			],
-			"output" : "/home/hjb/android_works/respberryDemo/app/build/intermediates/cmake/release/obj/arm64-v8a/libnative-lib.so",
+			"output" : "/tmp/androidThingsRobot/app/build/intermediates/cmake/release/obj/arm64-v8a/libnative-lib.so",
 			"toolchain" : "5227853895296450786"
 		}
 	},

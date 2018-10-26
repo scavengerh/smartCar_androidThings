@@ -163,6 +163,9 @@ public class MainActivity extends Activity {
         sockService.start();
         oledControl.drawStrings("启动网络服务成功。");
 
+        /**
+         * Load camera driver
+         * */
         if(false == usbCameraisOK){
             //Start Camera
             usbCamera = new UsbCamera(640, 480, sockService);
@@ -171,7 +174,6 @@ public class MainActivity extends Activity {
                 oledControl.drawStrings("启动摄像头成功。");
             }
         }
-
         createTabelMap();
         initBackgroundThread();
     }
@@ -203,6 +205,9 @@ public class MainActivity extends Activity {
 
     }
 
+    /**
+     * Initialize main loop for display status and gif picture.
+     * */
     private void initBackgroundThread() {
         mBackgroundThread = new HandlerThread("BackgroundThread");
         mBackgroundThread.start();
@@ -210,6 +215,9 @@ public class MainActivity extends Activity {
         mBackgroundHandler.post(mInitializeOnBackground);
     }
 
+    /**
+     * Create table for check result map to chinese.
+     * */
     private void createTabelMap(){
         engToCh = new HashMap<>();
         InputStream ins = null;
@@ -240,8 +248,6 @@ public class MainActivity extends Activity {
             e.printStackTrace();
         }
     }
-
-
 
 
     private static Bitmap toSmall(Bitmap bitmap) {
@@ -296,7 +302,7 @@ public class MainActivity extends Activity {
                             Recognition first = it.hasNext() ? it.next() : null;
                             //oledControl.drawStrings("图像识别结果： " + first.getTitle() + "（" + engToCh.get(first.getTitle()) + ")" + "(" + first.getConfidence() * 100.0f + ")");
                             String checkStr = first.getTitle() + "（" + engToCh.get(first.getTitle()) + ")" + "(" + first.getConfidence() * 100.0f + ")";
-                            oledControl.drawStrings(checkStr);
+//                            oledControl.drawStrings(checkStr);
                             try {
                                 sockService.putStrData(checkStr.getBytes("UTF8"));
                             } catch (UnsupportedEncodingException e) {
@@ -305,9 +311,10 @@ public class MainActivity extends Activity {
                             cameraFrameIsOk = false;
                         }
                     }
-                }else{
-                    oledControl.drawEjoin();
                 }
+
+                oledControl.drawEjoin();
+
             }
 
             TrigCanera.postDelayed(TensorflowRun, 2000);

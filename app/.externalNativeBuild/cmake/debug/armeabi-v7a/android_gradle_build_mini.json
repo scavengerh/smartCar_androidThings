@@ -1,16 +1,16 @@
 {
   "buildFiles": [
-    "/home/hjb/android_works/respberryDemo/app/CMakeLists.txt"
+    "/tmp/androidThingsRobot/app/CMakeLists.txt"
   ],
   "cleanCommands": [
-    "/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
+    "/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /tmp/androidThingsRobot/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
   ],
   "libraries": {
     "native-lib-Debug-armeabi-v7a": {
       "artifactName": "native-lib",
-      "buildCommand": "/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/hjb/android_works/respberryDemo/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target native-lib",
+      "buildCommand": "/home/hjb/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /tmp/androidThingsRobot/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target native-lib",
       "abi": "armeabi-v7a",
-      "output": "/home/hjb/android_works/respberryDemo/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so"
+      "output": "/tmp/androidThingsRobot/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so"
     }
   }
 }
