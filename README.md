@@ -49,13 +49,13 @@ Summary:
 
  8,开发阶段图像预览	
     ## Wait phone connect
-    ![image](https://github.com/jueying8888/smartCar_androidThings/Pose/waitPhone.png)
+    ![waitPhone](Pose/waitPhone.png)
     ## Client connnect
-    ![image](https://github.com/jueying8888/smartCar_androidThings/Pose/client.png)
+    ![client](Pose/client.png)
     ## Smart car emoticon
-    ![image](https://github.com/jueying8888/smartCar_androidThings/Pose/emot.png)
+    ![emot](Pose/emot.png)
     ## Smart car
-    ![image](https://github.com/jueying8888/smartCar_androidThings/Pose/car.png)
+    ![car](Pose/car.png)
 
   
 License
