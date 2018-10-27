@@ -38,12 +38,40 @@ Summary:
 
  7，Android Things平台搭建注意事项：
     在开发阶段，使用：
-                    <category android:name="android.intent.category.LAUNCHER"/>
+                    category android:name="android.intent.category.LAUNCHER"
     在发布阶段，使用如下配置，实现自启动
-                    <category android:name="android.intent.category.HOME"/>
-                    <category android:name="android.intent.category.DEFAULT"/>
+                    category android:name="android.intent.category.HOME"
+                    category android:name="android.intent.category.DEFAULT"
 
+ 
     第一次调试Android Things时使用网线的形式，如果有Wifi，可以adb进入后配置Wifi，配置如下：
     adb shell am startservice -n com.google.wifisetup/.WifiSetupService -a WifiSetupService.Connect -e ssid TP-LINK-007 -e passphrase 12345678
 
-    
+ 8,开发阶段图像预览	
+    ## Wait phone connect
+    ![image](https://github.com/jueying8888/smartCar_androidThings/Pose/waitPhone.png)
+    ## Client connnect
+    ![image](https://github.com/jueying8888/smartCar_androidThings/Pose/client.png)
+    ## Smart car emoticon
+    ![image](https://github.com/jueying8888/smartCar_androidThings/Pose/emot.png)
+    ## Smart car
+    ![image](https://github.com/jueying8888/smartCar_androidThings/Pose/car.png)
+
+  
+License
+-------
+
+      Copyright 2016 Cagdas Caglak
+
+      Licensed under the Apache License, Version 2.0 (the "License");
+      you may not use this file except in compliance with the License.
+      You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+      Unless required by applicable law or agreed to in writing, software
+      distributed under the License is distributed on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+      See the License for the specific language governing permissions and
+      limitations under the License.
+
