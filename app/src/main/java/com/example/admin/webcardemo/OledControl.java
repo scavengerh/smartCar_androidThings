@@ -33,22 +33,18 @@ public class OledControl{
     PeripheralManager piomanager;
     private Resources resources;
     private Font16 font;
-    private String hostIp;
 
     //控制OLED初始化时复位电路。
     private static String pinreset = "BCM26";
     public static Gpio pinReset;
 
 
-
-    protected void init(Resources resources, String Ip) {
+    protected void init(Resources resources) {
 
         this.resources = resources;
-        this.hostIp = Ip;
         piomanager = PeripheralManager.getInstance();
         font = new Font16(resources);
 
-        Log.i(TAG, "hostIp: "+ this.hostIp);
         try {
             /* Control Oled  reset*/
             pinReset = piomanager.openGpio(pinreset);
@@ -87,16 +83,15 @@ public class OledControl{
     public void drawStrings(String str){
         int xOffset = 0;
         int yOffset = 0;
-        int koffset = 0;
-        String dispStr = "Ip:"+ this.hostIp + str;
-        boolean[] strindex = new boolean[dispStr.length()];
-        boolean[][][] arr = font.drawString(dispStr, strindex);
+        int i, j, k;
+        boolean[] strindex = new boolean[str.length()];
+        boolean[][][] arr = font.drawString(str, strindex);
         if(mScreen  == null)
             return;
         mScreen.clearPixels();
-            for (int k = 0; k < dispStr.length(); k++) {
-                for (int i = 0; i < arr[k].length; i++) {
-                    for (int j = 0; j < arr[k][i].length; j++) { // %8表示一行显示8个汉字，
+            for (k = 0; k < str.length(); k++) {
+                for (i = 0; i < arr[k].length; i++) {
+                    for (j = 0; j < arr[k][i].length; j++) { // %8表示一行显示8个汉字，
                         mScreen.setPixel(i  + xOffset , j + yOffset, arr[k][j][i]);
                     }
                 }

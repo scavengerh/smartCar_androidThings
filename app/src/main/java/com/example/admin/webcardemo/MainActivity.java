@@ -85,29 +85,35 @@ public class MainActivity extends Activity {
         System.loadLibrary("native-lib");
     }
 
-    private String transint(byte data){
-         int tempint = (data < 0)?data+256:data;
-         return Integer.toHexString(tempint);
+    private String intToIp(int i) {
+        return (i & 0xFF ) + "." +
+                ((i >> 8 ) & 0xFF) + "." +
+                ((i >> 16 ) & 0xFF) + "." +
+                ( i >> 24 & 0xFF) ;
     }
-
-    private static boolean isWifi(Context mContext) {
-        ConnectivityManager connectivityManager = (ConnectivityManager) mContext
-                .getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo info= connectivityManager.getActiveNetworkInfo();
-        if (info!= null
-                && info.getType() == ConnectivityManager.TYPE_WIFI) {
-            return true;
-        }
-        return false;
-    }
-
 
     /**
-     * 获取ip地址
+     * 获取Wifi IP地址
+     * */
+    private String getWifiIp(){
+        String ip;
+        WifiManager wm=(WifiManager)getSystemService(Context.WIFI_SERVICE);
+        //检查Wifi状态
+        if(!wm.isWifiEnabled())
+            wm.setWifiEnabled(true);
+        WifiInfo wi= wm.getConnectionInfo();
+        //获取32位整型IP地址
+        int ipAdd = wi.getIpAddress();
+        //把整型地址转换成“*.*.*.*”地址
+        ip=intToIp(ipAdd);
+        return ip;
+    }
+
+    /**
+     * 获取以太网ip地址
      * @return
      */
-    public static String getHostIP() {
-
+    private String getNetworkIp() {
         String hostIp = null;
         try {
             Enumeration nis = NetworkInterface.getNetworkInterfaces();
@@ -131,8 +137,11 @@ public class MainActivity extends Activity {
             Log.i("yao", "SocketException");
             e.printStackTrace();
         }
-        return hostIp;
 
+        if(hostIp == null){
+            return getWifiIp();
+        }else
+            return hostIp;
     }
 
 
@@ -141,20 +150,21 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.i(TAG, "onCreate start...");
-        HostIp = getHostIP();
+        HostIp = getNetworkIp();
         Log.i(TAG, "Get IP address: " + HostIp);
 
         /**
          * Start Oled screen for display current status.
          * */
         oledControl = new OledControl();
-        oledControl.init(getResources(), HostIp);
+        oledControl.init(getResources());
         oledControl.drawlogoGif();
 
         motorControl = MotorControl.getInstance();
         motorControl.Init();
 
         oledControl.drawStrings("启动电机成功。");
+
 
         /**
          * Start Socket service
@@ -174,6 +184,7 @@ public class MainActivity extends Activity {
                 oledControl.drawStrings("启动摄像头成功。");
             }
         }
+
         createTabelMap();
         initBackgroundThread();
     }
@@ -311,13 +322,12 @@ public class MainActivity extends Activity {
                             cameraFrameIsOk = false;
                         }
                     }
+                    oledControl.drawEjoin();
+                }else{
+                    oledControl.drawStrings("等待手机连接:  "+ getNetworkIp());
                 }
-
-                oledControl.drawEjoin();
-
             }
-
-            TrigCanera.postDelayed(TensorflowRun, 2000);
+            TrigCanera.postDelayed(TensorflowRun, 3000);
         }
     };
 

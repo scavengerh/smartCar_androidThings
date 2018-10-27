@@ -42,8 +42,8 @@ public class ControlHandler implements RequestHandler {
             motorControl.controlCarMotorCmd(MotorControl.CMD_STOP);
         }
 
-        String utrl = "0.1;url=http://" + MainActivity.getHostIP() + ":8080/control.html";
-     //   Log.i(TAG, "Url: " + utrl);
-        response.setHeader("refresh", utrl);
+      //  String utrl = "0.1;url=http://" + MainActivity.getHostIP() + ":8080/control.html";
+      //  response.setHeader("refresh", utrl);
+        response.setHeader("refresh", "https://...");
     }
 }

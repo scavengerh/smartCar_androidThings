@@ -36,3 +36,14 @@ Summary:
      背景：智能小车增加了人机交互功能，通过WIFI与Android手机客户端交互，实现了图像，控制等一系列互交操作。
      技术：通过TCP与客户端通信，由于传输数据种类不同，目前只是做了简单传输协议，不同数据结尾增加不同结束符，在接收端进行整体解析即可进行双向通信。
 
+ 7，Android Things平台搭建注意事项：
+    在开发阶段，使用：
+                    <category android:name="android.intent.category.LAUNCHER"/>
+    在发布阶段，使用如下配置，实现自启动
+                    <category android:name="android.intent.category.HOME"/>
+                    <category android:name="android.intent.category.DEFAULT"/>
+
+    第一次调试Android Things时使用网线的形式，如果有Wifi，可以adb进入后配置Wifi，配置如下：
+    adb shell am startservice -n com.google.wifisetup/.WifiSetupService -a WifiSetupService.Connect -e ssid TP-LINK-007 -e passphrase 12345678
+
+    

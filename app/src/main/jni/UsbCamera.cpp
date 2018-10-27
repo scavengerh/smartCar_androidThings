@@ -203,7 +203,7 @@ static void* threadLoop(void * arg) {
         camera->UsbCameraFrame(timeout);
 
         //send data to java.
-        if(++frameCount%3 == 0)
+        //if(++frameCount% 3 == 0)
             camera->dataCallback(camera->head.start, camera->width* camera->height*2);
         usleep(5000);
     }
