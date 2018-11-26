@@ -133,13 +133,33 @@ public class SockService extends Thread {
         public void run() {
             byte[] recvBuff = new byte[1024];
             int readLen = 0;
+            int MotorCmd;
             while (isClientExist) {
                 try {
                     readLen = ins.read(recvBuff);
                     if (readLen == 3) {
                         switch (recvBuff[0]) {
                             case 0x10:
-                                motorControl.motorContrlAngle((double) recvBuff[1] * 10, true);
+                                //motorControl.motorContrlAngle((double) recvBuff[1] * 10, true);
+                                switch (recvBuff[1]){
+                                    case 0x10:
+                                        MotorCmd = MotorControl.CMD_FORWARD;
+                                        break;
+                                    case 0x20:
+                                        MotorCmd = MotorControl.CMD_BACKOFF;
+                                        break;
+                                    case 0x30:
+                                        MotorCmd = MotorControl.CMD_TURNLEGT;
+                                        break;
+                                    case 0x40:
+                                        MotorCmd = MotorControl.CMD_TURNRIGHT;
+                                        break;
+                                    case 0x50:
+                                    default:
+                                            MotorCmd = MotorControl.CMD_STOP;
+                                            break;
+                                }
+                                motorControl.controlCarMotorCmd(MotorCmd);
                                 break;
                             case 0x20:
                                 motorControl.controlSevroMotorCmd(1, recvBuff[2]);
